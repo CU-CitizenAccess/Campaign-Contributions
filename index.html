@@ -36,21 +36,31 @@
     <div id='map'></div>
     <div id='sidebar'>
         <h2>Campaign Contributions</h2>
-        <span class="label label-default">Default</span>
-        <span class="label label-primary">Primary</span>
-        <span class="label label-success">Success</span>
-        <span class="label label-success">Success</span>
+        <p>This map shows where contributions from each candidate are made.</p>
+        <h5>Choose a candidate:</h5>
+        <div class="btn-group">
+            <button type="button" class="btn btn-success">Bruce Rauner</button>
+            <button type="button" class="btn btn-default">Pat Quinn</button>
+        </div>
+        <h5>Choose a map:</h5>
+        <div class="zones" style="width: 300px;">
+            <button type="button" class="btn btn-success" style="width:130px; text-align: center; margin-bottom: 5px; ">House Districts</button>
+            <button type="button" class="btn btn-default" style="width:130px; display: inline-block; margin-bottom: 5px; text-align: center;">Senate Districts</button>
+            <button type="button" class="btn btn-default" style="width:130px; text-align: center; margin-bottom: 5px; ">County Lines</button>
+            <button type="button" class="btn btn-default" style="width:130px; display: inline-block; text-align: center; margin-bottom: 5px; ">Towns and Cities</button>
+        </div>
         <div class="marker-title"></div>
     </div>
 </div>
 <!-- <script src='geojson/rauner_house.geojson'></script> -->
-<script src="geojson/rauner_house.geojson"></script>
+<script src="geojson/house.geojson"></script>
+<script src="geojson/senate.geojson"></script>
+<script src="geojson/counties.geojson"></script>
+<script src="geojson/places.geojson"></script>
 <script>
     // instantiate the map and center it
     var map = L.map('map').setView([39.855, -89.429], 7);
-
     var popup = new L.Popup({ autoPan: false });
-
     var closeTooltip;
 
     // load tiles and add to map
@@ -61,7 +71,7 @@
 
 
     // load json
-    var house_layer = L.geoJson(rauner_house,  {
+    var layer = L.geoJson(map_layer,  {
         style: getStyle,
         onEachFeature: onEachFeature
     }).addTo(map);
@@ -73,7 +83,8 @@
             opacity: 0.1,
             color: 'black',
             fillOpacity: 0.7,
-            fillColor: getColor(feature.properties.rauner_house_Donations)
+            // fillColor: getColor(feature.properties.rauner_house_Donations)
+            fillColor: 'red'
         };
     }
 
@@ -91,17 +102,14 @@
 
     function onEachFeature(feature, layer) {
         layer.on({
-            mouseover: mouseover,
+            mousemove: mousemove,
             mouseout: mouseout,
-            click: zoomToFeature
+            click: clickEvent
         });
     }
 
-    function mouseover(e) {
+    function mousemove(e) {
         var layer = e.target;
-
-        layer.bindPopup('<div class="marker-title">' + layer.feature.properties.Name + '</div>' +
-                layer.feature.properties.rauner_house_Donations + ' donations');
 
         // highlight feature
         layer.setStyle({
@@ -122,8 +130,9 @@
         }, 100);
     }
 
-    function zoomToFeature(e) {
+    function clickEvent(e) {
         // map.fitBounds(e.target.getBounds());
+        console.log(e)
     }
 </script>
 </body>
