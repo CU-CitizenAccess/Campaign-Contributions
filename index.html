@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Campaign Contributions</title>
+    <!-- Leaflet JS -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="js/leaflet.ajax.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        body { margin:0; padding:0; }
+        #map { display: inline-block; width:700px; height: 700px; float: left; }
+        #sidebar {
+            width: 300px;
+            height: 700px;
+            display: inline-block;
+            padding: 0 15px;
+        }
+        .leaflet-popup-close-button {
+            display: none;
+        }
+        .leaflet-popup-content-wrapper {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id='map'></div>
+    <div id='sidebar'>
+        <h2>Campaign Contributions</h2>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-success">Success</span>
+        <div class="marker-title"></div>
+    </div>
+</div>
+<!-- <script src='geojson/rauner_house.geojson'></script> -->
+<script src="geojson/rauner_house.geojson"></script>
+<script>
+    // instantiate the map and center it
+    var map = L.map('map').setView([39.855, -89.429], 7);
+
+    var popup = new L.Popup({ autoPan: false });
+
+    var closeTooltip;
+
+    // load tiles and add to map
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/actongorton.k2ojjfli/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        maxZoom: 18
+    }).addTo(map);
+
+
+    // load json
+    var house_layer = L.geoJson(rauner_house,  {
+        style: getStyle,
+        onEachFeature: onEachFeature
+    }).addTo(map);
+
+    // define colors
+    function getStyle(feature) {
+        return {
+            weight: 1,
+            opacity: 0.1,
+            color: 'black',
+            fillOpacity: 0.7,
+            fillColor: getColor(feature.properties.rauner_house_Donations)
+        };
+    }
+
+    // get color depending on population density value
+    function getColor(d) {
+        return d > 1000 ? '#8c2d04' :
+            d > 500  ? '#cc4c02' :
+            d > 200  ? '#ec7014' :
+            d > 100  ? '#fe9929' :
+            d > 50   ? '#fec44f' :
+            d > 20   ? '#fee391' :
+            d > 10   ? '#fff7bc' :
+            '#ffffe5';
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: mouseover,
+            mouseout: mouseout,
+            click: zoomToFeature
+        });
+    }
+
+    function mouseover(e) {
+        var layer = e.target;
+
+        layer.bindPopup('<div class="marker-title">' + layer.feature.properties.Name + '</div>' +
+                layer.feature.properties.rauner_house_Donations + ' donations');
+
+        // highlight feature
+        layer.setStyle({
+            weight: 3,
+            opacity: 0.3,
+            fillOpacity: 0.9
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera) {
+            layer.bringToFront();
+        }
+    }
+
+    function mouseout(e) {
+        house_layer.resetStyle(e.target);
+        closeTooltip = window.setTimeout(function() {
+            map.closePopup();
+        }, 100);
+    }
+
+    function zoomToFeature(e) {
+        // map.fitBounds(e.target.getBounds());
+    }
+</script>
+</body>
+</html>
