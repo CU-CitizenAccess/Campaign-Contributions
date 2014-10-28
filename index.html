@@ -39,8 +39,8 @@
         <p>This map shows where contributions from each candidate are made.</p>
         <h5>Choose a candidate:</h5>
         <div class="btn-group">
-            <button type="button" class="btn btn-success">Bruce Rauner</button>
-            <button type="button" class="btn btn-default">Pat Quinn</button>
+            <button type="button" class="btn btn-success candidate-button">Bruce Rauner</button>
+            <button type="button" class="btn btn-default candidate-button">Pat Quinn</button>
         </div>
         <h5>Choose a map:</h5>
         <div class="zones" style="width: 300px;">
@@ -64,6 +64,19 @@
     var closeTooltip;
     var currentmap;
     var map_zone;
+
+    // change buttons when clicked
+    $('button').click(function(){
+        if ($(this).hasClass('candidate-button')){
+            $('.candidate-button').removeClass('btn-success').addClass('btn-default');
+            $(this).removeClass('btn-default').addClass('btn-success');
+        }
+        else if ($(this).hasClass('map-button')){
+            $('.map-button').removeClass('btn-success').addClass('btn-default');
+            $(this).removeClass('btn-default').addClass('btn-success');
+        }
+
+    });
 
     // load tiles and add to map
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/actongorton.k2ojjfli/{z}/{x}/{y}.png', {
@@ -91,9 +104,9 @@
             weight: 1,
             opacity: 0.1,
             color: 'black',
-            fillOpacity: 0.7//,
+            fillOpacity: 0.7,
             // fillColor: getColor(feature.properties.rauner_house_Donations)
-            // fillColor: 'red'
+            fillColor: 'white'
         };
     }
 
@@ -122,7 +135,7 @@
 
         // highlight feature
         layer.setStyle({
-            weight: 3,
+            weight: 1,
             opacity: 0.3,
             fillOpacity: 0.9
         });
