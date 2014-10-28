@@ -23,11 +23,11 @@
             display: inline-block;
             padding: 0 15px;
         }
-        .leaflet-popup-close-button {
-            display: none;
-        }
-        .leaflet-popup-content-wrapper {
-            pointer-events: none;
+        .map-button {
+            width:130px;
+            text-align: center;
+            margin-bottom: 5px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -35,7 +35,7 @@
 <div id="wrapper">
     <div id='map'></div>
     <div id='sidebar'>
-        <h2>Campaign Contributions</h2>
+        <h4>Campaign Contributions</h4>
         <p>This map shows where contributions from each candidate are made.</p>
         <h5>Choose a candidate:</h5>
         <div class="btn-group">
@@ -44,10 +44,10 @@
         </div>
         <h5>Choose a map:</h5>
         <div class="zones" style="width: 300px;">
-            <button type="button" class="btn btn-success" style="width:130px; text-align: center; margin-bottom: 5px; ">House Districts</button>
-            <button type="button" class="btn btn-default" style="width:130px; display: inline-block; margin-bottom: 5px; text-align: center;">Senate Districts</button>
-            <button type="button" class="btn btn-default" style="width:130px; text-align: center; margin-bottom: 5px; ">County Lines</button>
-            <button type="button" class="btn btn-default" style="width:130px; display: inline-block; text-align: center; margin-bottom: 5px; ">Towns and Cities</button>
+            <button type="button" onclick="loadmap('house', house)" class="btn btn-success map-button">House Districts</button>
+            <button type="button" onclick="loadmap('senate', senate)" class="btn btn-default map-button">Senate Districts</button>
+            <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
+            <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
         </div>
         <div class="marker-title"></div>
     </div>
@@ -62,6 +62,8 @@
     var map = L.map('map').setView([39.855, -89.429], 7);
     var popup = new L.Popup({ autoPan: false });
     var closeTooltip;
+    var currentmap;
+    var map_zone;
 
     // load tiles and add to map
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/actongorton.k2ojjfli/{z}/{x}/{y}.png', {
@@ -70,11 +72,18 @@
     }).addTo(map);
 
 
-    // load json
-    var layer = L.geoJson(map_layer,  {
-        style: getStyle,
-        onEachFeature: onEachFeature
-    }).addTo(map);
+    function loadmap(map_name, map_layer) {
+
+        if (map_zone){
+            map.removeLayer(map_zone)
+        }
+
+        // load json
+        map_zone = L.geoJson(map_layer, {
+            style: getStyle,
+            onEachFeature: onEachFeature
+        }).addTo(map);
+    }
 
     // define colors
     function getStyle(feature) {
@@ -82,9 +91,9 @@
             weight: 1,
             opacity: 0.1,
             color: 'black',
-            fillOpacity: 0.7,
+            fillOpacity: 0.7//,
             // fillColor: getColor(feature.properties.rauner_house_Donations)
-            fillColor: 'red'
+            // fillColor: 'red'
         };
     }
 
@@ -124,7 +133,7 @@
     }
 
     function mouseout(e) {
-        house_layer.resetStyle(e.target);
+        map_zone.resetStyle(e.target);
         closeTooltip = window.setTimeout(function() {
             map.closePopup();
         }, 100);
