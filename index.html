@@ -74,10 +74,10 @@
             <div id="step2" style="display: none;">
                 <h5>Choose a map:</h5>
                 <div class="zones" style="width: 300px;">
-                    <button type="button" onclick="loadmap('house', house)" class="btn btn-default map-button">House Districts</button>
-                    <button type="button" onclick="loadmap('senate', senate)" class="btn btn-default map-button">Senate Districts</button>
-                    <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
-                    <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
+                    <button type="button" onclick="loadmap('il_house', house)" class="btn btn-default map-button">House Districts</button>
+                    <button type="button" onclick="loadmap('il_senate', senate)" class="btn btn-default map-button">Senate Districts</button>
+                    <button type="button" onclick="loadmap('county', counties)" class="btn btn-default map-button">County Lines</button>
+                    <button type="button" onclick="loadmap('place', places)" class="btn btn-default map-button">Towns and Cities</button>
                 </div>
             </div>
             <div id="step3" style="display: none;">
@@ -132,6 +132,7 @@
     var map_zone;
     var contributions;
     var candidate;
+    var map_place;
 
     // change buttons when clicked
     $('button').click(function(){
@@ -155,6 +156,10 @@
     }).addTo(map);
 
     function loadmap(map_name, map_layer, candidate) {
+
+        console.log(map_name);
+        map_place = map_name
+
         if (map_zone){
             map.removeLayer(map_zone)
         }
@@ -167,7 +172,7 @@
     }
 
     // define colors
-    function getStyle(feature) {
+    function getStyle(feature, map_name) {
         return {
             weight: 1,
             opacity: 0.1,
@@ -214,7 +219,7 @@
             if (record.place == recordname) {
 
                 for (var ii = 0, rr; rr = contributions.records[ii]; ii++) {
-                    if (rr.group == record.group) {
+                    if (rr.group == record.group && map_place == record.type) {
                         wallet = wallet + parseInt(rr.total);
                     }
                 }
@@ -255,7 +260,7 @@
             if (record.place == recordname){
 
                 for (var ii = 0, rr; rr = contributions.records[ii]; ii++) {
-                    if (rr.group == record.group){
+                    if (rr.group == record.group && map_place == record.type) {
                         $('#information').append('' +
                                 '<div class="record">' +
                                 '<h5>' + record.group + '</h5>' +
