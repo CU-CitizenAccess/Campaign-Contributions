@@ -63,7 +63,6 @@
         <div id="information"></div>
     </div>
 </div>
-<!-- <script src='geojson/rauner_house.geojson'></script> -->
 <script src="geojson/house.geojson"></script>
 <script src="geojson/senate.geojson"></script>
 <script src="geojson/counties.geojson"></script>
@@ -98,7 +97,6 @@
             $('.map-button').removeClass('btn-success').addClass('btn-default');
             $(this).removeClass('btn-default').addClass('btn-success');
         }
-
     });
 
     // load tiles and add to map
@@ -121,6 +119,8 @@
             style: getStyle,
             onEachFeature: onEachFeature
         }).addTo(map);
+
+
     }
 
     // define colors
@@ -130,21 +130,27 @@
             opacity: 0.1,
             color: 'black',
             fillOpacity: 0.7,
-            // fillColor: getColor(feature.properties.rauner_house_Donations)
-            fillColor: 'white'
+            fillColor: getColor(feature)
+            // fillColor: 'white'
         };
     }
 
     // get color depending on population density value
-    function getColor(d) {
-        return d > 1000 ? '#8c2d04' :
-            d > 500  ? '#cc4c02' :
-            d > 200  ? '#ec7014' :
-            d > 100  ? '#fe9929' :
-            d > 50   ? '#fec44f' :
-            d > 20   ? '#fee391' :
-            d > 10   ? '#fff7bc' :
-            '#ffffe5';
+    function getColor(feature) {
+
+        // lookup name and return value to assign to color
+        var blah = returnName(feature);
+        console.log(blah);
+
+
+        return blah > 1000 ? '#8c2d04' :
+               blah > 500  ? '#cc4c02' :
+               blah > 200  ? '#ec7014' :
+               blah > 100  ? '#fe9929' :
+               blah > 50   ? '#fec44f' :
+               blah > 20   ? '#fee391' :
+               blah > 10   ? '#fff7bc' :
+                          '#ffffe5' ;
     }
 
     function onEachFeature(feature, layer) {
@@ -153,6 +159,24 @@
             mouseout: mouseout,
             click: clickEvent
         });
+    }
+
+    function returnName(e){
+        // console.log(e);
+
+        var recordname = e.properties.NAME;
+        var recordbigname = e.properties.NAMELSAD;
+
+        for (var i = 0, record; record = groupnames.records[i]; i++) {
+            if (record.place == recordname) {
+
+                for (var ii = 0, rr; rr = raunercontributions.records[ii]; ii++) {
+                    if (rr.group == record.group) {
+                        return rr.total;
+                    }
+                }
+            }
+        }
     }
 
     function mousemove(e) {
@@ -176,10 +200,10 @@
 
         // populate information box with records
         var recordname = e.target.feature.properties.NAME;
-        var recordbigname = e.target.feature.properties.NAMELSAD
+        var recordbigname = e.target.feature.properties.NAMELSAD;
 
         for (var i = 0, record; record = groupnames.records[i]; i++){
-            if (recordname == record.place){
+            if (record.place == recordname){
 
                 for (var ii = 0, rr; rr = raunercontributions.records[ii]; ii++) {
                     if (rr.group == record.group){
