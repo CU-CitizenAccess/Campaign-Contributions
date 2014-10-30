@@ -141,11 +141,11 @@
         // lookup name and return value to assign to color
         var dammount = returnAmmount(feature);
 
-        return dammount > 10  ? '#FF0000' :
-               dammount > 9   ? '#FF8000' :
-               dammount > 8.3 ? '#FFFF00' :
-               dammount > 7.7 ? '#80FF00' :
-               dammount > 6   ? '#00FFA2' :
+        return dammount > 100000  ? '#a50f15' :
+               dammount > 20000   ? '#de2d26' :
+               dammount > 10000 ? '#fb6a4a' :
+               dammount > 5000 ? '#fcae91' :
+               dammount > 1000   ? '#fee5d9' :
                                 '#FFFFFF' ;
     }
 
@@ -161,17 +161,22 @@
 
         var recordname = e.properties.NAME;
         var recordbigname = e.properties.NAMELSAD;
+        var wallet = 0;
 
         for (var i = 0, record; record = groupnames.records[i]; i++) {
             if (record.place == recordname) {
 
                 for (var ii = 0, rr; rr = raunercontributions.records[ii]; ii++) {
                     if (rr.group == record.group) {
-                        return rr.log3;
+
+                        wallet = wallet + parseInt(rr.total);
                     }
                 }
             }
         }
+
+        console.log(recordname + ":" + wallet)
+        return wallet;
     }
 
     function mousemove(e) {
