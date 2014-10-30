@@ -1,0 +1,529 @@
+var groupnames = {
+    "records": [
+        {
+            "group": "Adams County Republican Central Committee",
+            "place": "Adams",
+            "type": "county"
+        },
+        {
+            "group": "Peoria County Republican Central Committee",
+            "place": "Peoria",
+            "type": "county"
+        },
+        {
+            "group": "Kendall County Republican Central Comm",
+            "place": "Kendall",
+            "type": "county"
+        },
+        {
+            "group": "Lake County Republican Central Comm",
+            "place": "Lake",
+            "type": "county"
+        },
+        {
+            "group": "Kane County Republican Central Cmte",
+            "place": "Kane",
+            "type": "county"
+        },
+        {
+            "group": "Grundy County Republican Central Cmte",
+            "place": "Grundy",
+            "type": "county"
+        },
+        {
+            "group": "Carroll County Republican Central Committee",
+            "place": "Carroll",
+            "type": "county"
+        },
+        {
+            "group": "DuPage County Republican Central Committee",
+            "place": "DuPage",
+            "type": "county"
+        },
+        {
+            "group": "Madison County Republican Central Comm",
+            "place": "Madison",
+            "type": "county"
+        },
+        {
+            "group": "Kankakee County Republican Central Committee",
+            "place": "Kankakee",
+            "type": "county"
+        },
+        {
+            "group": "Lee County Republican Central Committee",
+            "place": "Lee",
+            "type": "county"
+        },
+        {
+            "group": "Henry County Republican Central Committee",
+            "place": "Henry",
+            "type": "county"
+        },
+        {
+            "group": "Republican Central Comm of McHenry County",
+            "place": "McHenry",
+            "type": "county"
+        },
+        {
+            "group": "Cook County Republican Party",
+            "place": "Cook",
+            "type": "county"
+        },
+        {
+            "group": "Sangamon County Republican Central Comm",
+            "place": "Sangamon",
+            "type": "county"
+        },
+        {
+            "group": "Champaign County Republican Central Cmte",
+            "place": "Champaign",
+            "type": "county"
+        },
+        {
+            "group": "Lake County Republican Federation",
+            "place": "Lake",
+            "type": "county"
+        },
+        {
+            "group": "Sangamon County Republican Foundation",
+            "place": "Sangamon",
+            "type": "county"
+        },
+        {
+            "group": "Macon County Republican Central Cmte",
+            "place": "Macon",
+            "type": "county"
+        },
+        {
+            "group": "Logan County Republican Central Committee",
+            "place": "Logan",
+            "type": "county"
+        },
+        {
+            "group": "Williamson County Republican Central Comm",
+            "place": "Williamson",
+            "type": "county"
+        },
+        {
+            "group": "Christian County Republican Central Cmte",
+            "place": "Christian",
+            "type": "county"
+        },
+        {
+            "group": "DeKalb County Republican Central Cmte",
+            "place": "DeKalb",
+            "type": "county"
+        },
+        {
+            "group": "DuPage Young Republicans",
+            "place": "DuPage",
+            "type": "county"
+        },
+        {
+            "group": "La Salle County Republican Central Cmte",
+            "place": "La Salle",
+            "type": "county"
+        },
+        {
+            "group": "Richland County Republican Central Comm",
+            "place": "Richland",
+            "type": "county"
+        },
+        {
+            "group": "Effingham County Republican Central Comm",
+            "place": "Effingham",
+            "type": "county"
+        },
+        {
+            "group": "Fayette County Republican Central Comm",
+            "place": "Fayette",
+            "type": "county"
+        },
+        {
+            "group": "Ford County Republican Central Cmte",
+            "place": "Ford",
+            "type": "county"
+        },
+        {
+            "group": "McLean County Republican Central Comm",
+            "place": "McLean",
+            "type": "county"
+        },
+        {
+            "group": "Winnebago County Republican Central Cmte",
+            "place": "Winnebago",
+            "type": "county"
+        },
+        {
+            "group": "Stark County Republican Central Comm",
+            "place": "Stark",
+            "type": "county"
+        },
+        {
+            "group": "Kankakee County Republican Women",
+            "place": "Kankakee",
+            "type": "county"
+        },
+        {
+            "group": "Perry County Republican Central Comm",
+            "place": "Perry",
+            "type": "county"
+        },
+        {
+            "group": "Woodford County Republican Central Cmte",
+            "place": "Woodford",
+            "type": "county"
+        },
+        {
+            "group": "Lake County Young Republicans",
+            "place": "Lake",
+            "type": "county"
+        },
+        {
+            "group": "Rock Island County Republican Central Cmte",
+            "place": "Rock Island",
+            "type": "county"
+        },
+        {
+            "group": "Kane County Republican Advisory Council",
+            "place": "Kane",
+            "type": "county"
+        },
+        {
+            "group": "Whiteside County Republican Central Committee",
+            "place": "Whiteside",
+            "type": "county"
+        },
+        {
+            "group": "Fulton County Republican Central Comm",
+            "place": "Fulton",
+            "type": "county"
+        },
+        {
+            "group": "Mason County Republican Central Comm",
+            "place": "Mason",
+            "type": "county"
+        },
+        {
+            "group": "Edgar County Republican Central Committee",
+            "place": "Edgar",
+            "type": "county"
+        },
+        {
+            "group": "McDonough County Republican Central Comm",
+            "place": "McDonough",
+            "type": "county"
+        },
+        {
+            "group": "Monroe County Republican Central Cmte",
+            "place": "Monroe",
+            "type": "county"
+        },
+        {
+            "group": "Tazewell County Republican Central Committee",
+            "place": "Tazewell",
+            "type": "county"
+        },
+        {
+            "group": "McLean County Republican Women",
+            "place": "McLean",
+            "type": "county"
+        },
+        {
+            "group": "Will County Republican Central Comm",
+            "place": "Will",
+            "type": "county"
+        },
+        {
+            "group": "Vermilion County Republican Central Cmte",
+            "place": "Vermilion",
+            "type": "county"
+        },
+        {
+            "group": "Friends of Kristin Williamson",
+            "place": "103",
+            "type": "il_house"
+        },
+        {
+            "group": "Friends of Tom Bennett",
+            "place": "106",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Kay",
+            "place": "112",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Fatimah Macklin",
+            "place": "34",
+            "type": "il_house"
+        },
+        {
+            "group": "Vote for Margo McDermed for Illinois House",
+            "place": "37",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Ramiro Juarez",
+            "place": "44",
+            "type": "il_house"
+        },
+        {
+            "group": "Winger for Rep",
+            "place": "45",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Seth Lewis",
+            "place": "45",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Heidi Holan",
+            "place": "46",
+            "type": "il_house"
+        },
+        {
+            "group": "Committee to Elect Keith Wheeler",
+            "place": "50",
+            "type": "il_house"
+        },
+        {
+            "group": "David McSweeney for State Representative",
+            "place": "52",
+            "type": "il_house"
+        },
+        {
+            "group": "Committee to Elect Mel Thillens",
+            "place": "55",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Jim Moynihan",
+            "place": "56",
+            "type": "il_house"
+        },
+        {
+            "group": "Neerhof for Illinois",
+            "place": "58",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Leslie Munger",
+            "place": "59",
+            "type": "il_house"
+        },
+        {
+            "group": "Committee to Elect Sheri Jesiel",
+            "place": "61",
+            "type": "il_house"
+        },
+        {
+            "group": "Friends of Rod Drobinski",
+            "place": "62",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Joe Sosnowski",
+            "place": "69",
+            "type": "il_house"
+        },
+        {
+            "group": "Wozniak for Illinois",
+            "place": "71",
+            "type": "il_house"
+        },
+        {
+            "group": "Friends of John D Anthony",
+            "place": "75",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Glenn Nixon",
+            "place": "79",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens to Elect Ron Sandack",
+            "place": "81",
+            "type": "il_house"
+        },
+        {
+            "group": "Citizens for Durkin",
+            "place": "82",
+            "type": "il_house"
+        },
+        {
+            "group": "Friends of Mark Batinick",
+            "place": "97",
+            "type": "il_house"
+        },
+        {
+            "group": "Friends of Shaun Murphy",
+            "place": "18",
+            "type": "il_senate"
+        },
+        {
+            "group": "Citizens for Chris Nybo",
+            "place": "24",
+            "type": "il_senate"
+        },
+        {
+            "group": "Anderson for Illinois",
+            "place": "36",
+            "type": "il_senate"
+        },
+        {
+            "group": "Citizens for Darin LaHood",
+            "place": "37",
+            "type": "il_senate"
+        },
+        {
+            "group": "Citizens for Christine Radogno",
+            "place": "41",
+            "type": "il_senate"
+        },
+        {
+            "group": "Citizens for Dale A Righter Illinois State Senate",
+            "place": "55",
+            "type": "il_senate"
+        },
+        {
+            "group": "Citizens for Luechtefeld",
+            "place": "58",
+            "type": "il_senate"
+        },
+        {
+            "group": "Addison Twp Republican Central Cmte",
+            "place": "Addison Township",
+            "type": "place"
+        },
+        {
+            "group": "Aurora Township Republican Central Cmte",
+            "place": "Aurora Township",
+            "type": "place"
+        },
+        {
+            "group": "Bloomingdale Township Republican Central Cmte",
+            "place": "Bloomingdale Township",
+            "type": "place"
+        },
+        {
+            "group": "Bremen Township Republican Organization",
+            "place": "Bremen Township",
+            "type": "place"
+        },
+        {
+            "group": "Cuba Township Republicans",
+            "place": "Cuba Township",
+            "type": "place"
+        },
+        {
+            "group": "Downers Grove Township Republican Organization",
+            "place": "Downers Grove Township",
+            "type": "place"
+        },
+        {
+            "group": "Dundee Township Republican Organization",
+            "place": "Dundee Township",
+            "type": "place"
+        },
+        {
+            "group": "The Republican Organization of Elk Grove Twp",
+            "place": "Elk Grove Township",
+            "type": "place"
+        },
+        {
+            "group": "Hanover Elects Responsible Officials",
+            "place": "Hanover Township",
+            "type": "place"
+        },
+        {
+            "group": "Republicans of Maine Township",
+            "place": "Maine Township",
+            "type": "place"
+        },
+        {
+            "group": "New Trier Republican Organization",
+            "place": "New Trier Township",
+            "type": "place"
+        },
+        {
+            "group": "Northfield Twp Regular Republican Org",
+            "place": "Northfield Township",
+            "type": "place"
+        },
+        {
+            "group": "Nunda Township Republican Central Committee",
+            "place": "Nunda Township",
+            "type": "place"
+        },
+        {
+            "group": "Regular Republican Organization of Orland Twp",
+            "place": "Orland Township",
+            "type": "place"
+        },
+        {
+            "group": "Palatine Township Republican Organization",
+            "place": "Palatine Township",
+            "type": "place"
+        },
+        {
+            "group": "Republican Organization of Palos Twp",
+            "place": "Palos Township",
+            "type": "place"
+        },
+        {
+            "group": "Schaumburg Township Republican Organization (STRO)",
+            "place": "Schaumburg Township",
+            "type": "place"
+        },
+        {
+            "group": "Warren Township Republican Organization",
+            "place": "Warren Township",
+            "type": "place"
+        },
+        {
+            "group": "Wheatland Twp Republican Org",
+            "place": "Wheatland Township",
+            "type": "place"
+        },
+        {
+            "group": "Republicans of Wheeling Township",
+            "place": "Wheeling Township",
+            "type": "place"
+        },
+        {
+            "group": "Worth Twp Regular Republican Org",
+            "place": "Worth Township",
+            "type": "place"
+        },
+        {
+            "group": "York Township Republican Committeemen's Organization",
+            "place": "York Township",
+            "type": "place"
+        },
+        {
+            "group": "Chicago Young Republicans",
+            "place": "Chicago",
+            "type": "place"
+        },
+        {
+            "group": "Naperville Area Republican Women's Organization",
+            "place": "Naperville",
+            "type": "place"
+        },
+        {
+            "group": "Evanston Regular Republican Org",
+            "place": "Evanston",
+            "type": "place"
+        },
+        {
+            "group": "Godfrey District 1 Republicans",
+            "place": "Godfrey Township, Alton Township, Foster Township",
+            "type": "place"
+        }
+    ]
+}

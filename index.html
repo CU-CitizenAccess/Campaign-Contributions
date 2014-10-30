@@ -23,12 +23,16 @@
             display: inline-block;
             padding: 0 15px;
         }
+        .candidate-button {
+            width: 133px;
+        }
         .map-button {
-            width:130px;
+            width: 130px;
             text-align: center;
             margin-bottom: 5px;
             display: inline-block;
         }
+        .record { border: 1px solid #19A347; padding: 0 5px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -49,7 +53,8 @@
             <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
             <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
         </div>
-        <div class="marker-title"></div>
+        <div><h4 class="marker-title"></h4></div>
+        <div id="information"></div>
     </div>
 </div>
 <!-- <script src='geojson/rauner_house.geojson'></script> -->
@@ -57,6 +62,15 @@
 <script src="geojson/senate.geojson"></script>
 <script src="geojson/counties.geojson"></script>
 <script src="geojson/places.geojson"></script>
+<script src="json/groupnames.json"></script>
+<!-- variables declared in above json files:
+- house (state house districts)
+- senate (state senate districts)
+- counties (state county lines)
+- places (cities, towns, etc)
+- groupnames (match donation recipients to a location)
+-->
+
 <script>
     // instantiate the map and center it
     var map = L.map('map').setView([39.855, -89.429], 7);
@@ -64,6 +78,7 @@
     var closeTooltip;
     var currentmap;
     var map_zone;
+
 
     // change buttons when clicked
     $('button').click(function(){
@@ -86,6 +101,8 @@
 
 
     function loadmap(map_name, map_layer) {
+        console.log(map_name);
+
 
         if (map_zone){
             map.removeLayer(map_zone)
@@ -140,6 +157,8 @@
             fillOpacity: 0.9
         });
 
+        $('.marker-title').text(e.target.feature.properties.NAMELSAD);
+
         if (!L.Browser.ie && !L.Browser.opera) {
             layer.bringToFront();
         }
@@ -154,7 +173,20 @@
 
     function clickEvent(e) {
         // map.fitBounds(e.target.getBounds());
-        console.log(e)
+
+        // clear out information box
+        $('#information').html('');
+
+        // populate information box with records
+        var recordname = e.target.feature.properties.NAME;
+        console.log(e.target.feature.properties.NAMELSAD)
+
+        for (var i = 0, record; record = groupnames.records[i]; i++){
+            if (recordname == record.place){
+                console.log('... you picked ' + recordname);
+                $('#information').append('<div class="record"><h5>' + record.group + '</h5></div>')
+            }
+        }
     }
 </script>
 </body>
