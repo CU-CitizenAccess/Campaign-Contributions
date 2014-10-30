@@ -1,507 +1,633 @@
 var raunercontributions = {"records":[
 	{
-		"group":"8th Congressional District Republican Central Committee",
-		"total":"2500"
-	},
-	{
-		"group":"Adams County Republican Central Committee",
-		"total":"8000"
-	},
-	{
-		"group":"Addison Twp Republican Central Cmte",
-		"total":"5000"
-	},
-	{
-		"group":"Anderson for Illinois",
-		"total":"5300"
-	},
-	{
-		"group":"Aurora Township Republican Central Cmte",
-		"total":"500"
-	},
-	{
-		"group":"Bloomingdale Township Republican Central Cmte",
-		"total":"1000"
-	},
-	{
-		"group":"Bremen Township Republican Organization",
-		"total":"1000"
-	},
-	{
-		"group":"Carroll County Republican Central Committee",
-		"total":"1000"
-	},
-	{
-		"group":"Champaign County Republican Central Cmte",
-		"total":"5000"
-	},
-	{
-		"group":"Chicago Young Republicans",
-		"total":"10500"
-	},
-	{
-		"group":"Christian County Republican Central Cmte",
-		"total":"1000"
-	},
-	{
-		"group":"Citizens for Aaron Del Mar",
-		"total":"2500"
-	},
-	{
-		"group":"Citizens for Chris Nybo",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Christine Radogno",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Dale A Righter Illinois State Senate",
-		"total":"5300"
-	},
-	{
-		"group":"Citizens for Dan Cronin",
-		"total":"500"
-	},
-	{
-		"group":"Citizens for Darin LaHood",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Durkin",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Fatimah Macklin",
-		"total":"1000"
-	},
-	{
-		"group":"Citizens for Glenn Nixon",
-		"total":"21200"
-	},
-	{
-		"group":"Citizens for Heidi Holan",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Jim Moynihan",
-		"total":"5300"
-	},
-	{
-		"group":"Citizens for Joe Sosnowski",
-		"total":"5300"
-	},
-	{
-		"group":"Citizens for Kay",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Leslie Munger",
-		"total":"21200"
-	},
-	{
-		"group":"Citizens for Luechtefeld",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Mike Nerheim",
-		"total":"500"
-	},
-	{
-		"group":"Citizens for Ramiro Juarez",
-		"total":"3500"
-	},
-	{
-		"group":"Citizens for Rauner, Inc",
-		"total":"23109184"
-	},
-	{
-		"group":"Citizens for Reggie Phillips",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens for Seth Lewis",
-		"total":"10600"
-	},
-	{
-		"group":"Citizens to Elect Ron Sandack",
-		"total":"10600"
-	},
-	{
-		"group":"Committee for Legislative Reform and Term Limits",
-		"total":"600000"
-	},
-	{
-		"group":"Committee to Elect Keith Wheeler",
-		"total":"21200"
-	},
-	{
-		"group":"Committee to Elect Mel Thillens",
-		"total":"21200"
-	},
-	{
-		"group":"Committee to Elect Sheri Jesiel",
-		"total":"10600"
-	},
-	{
-		"group":"Cook County Republican Party",
-		"total":"5000"
-	},
-	{
-		"group":"Cross for Treasurer",
-		"total":"10600"
-	},
-	{
-		"group":"Cuba Township Republicans",
-		"total":"1000"
-	},
-	{
-		"group":"David McSweeney for State Representative",
-		"total":"10600"
-	},
-	{
-		"group":"DeKalb County Republican Central Cmte",
-		"total":"1300"
-	},
-	{
-		"group":"Downers Grove Township Republican Organization",
-		"total":"15500"
-	},
-	{
-		"group":"Downstate GOP",
-		"total":"10000"
-	},
-	{
-		"group":"Dundee Township Republican Organization",
-		"total":"1000"
-	},
-	{
-		"group":"DuPage County Republican Central Committee",
-		"total":"25000"
-	},
-	{
-		"group":"DuPage Young Republicans",
-		"total":"500"
-	},
-	{
-		"group":"Edgar County Republican Central Committee",
-		"total":"600"
-	},
-	{
-		"group":"Effingham County Republican Central Comm",
-		"total":"3500"
-	},
-	{
-		"group":"Evanston Regular Republican Org",
-		"total":"1000"
-	},
-	{
-		"group":"Fayette County Republican Central Comm",
-		"total":"4500"
-	},
-	{
-		"group":"Federation of Illinois Young Republicans",
-		"total":"500"
-	},
-	{
-		"group":"Ford County Republican Central Cmte",
-		"total":"1000"
-	},
-	{
-		"group":"Friends for Rod Drobinski",
-		"total":"10600"
-	},
-	{
-		"group":"Friends of Gordy Hulten",
-		"total":"2500"
-	},
-	{
-		"group":"Friends of John D Anthony",
-		"total":"21200"
-	},
-	{
-		"group":"Friends of Keith Brin",
-		"total":"500"
-	},
-	{
-		"group":"Friends of Kristin Williamson",
-		"total":"10600"
-	},
-	{
-		"group":"Friends of Mark Batinick",
-		"total":"46200"
-	},
-	{
-		"group":"Friends of Shaun Murphy",
-		"total":"11350"
-	},
-	{
-		"group":"Friends of Tom Bennett",
-		"total":"10600"
-	},
-	{
-		"group":"Fulton County Republican Central Comm",
-		"total":"500"
-	},
-	{
 		"group":"Godfrey District 1 Republicans",
-		"total":"200"
-	},
-	{
-		"group":"Grundy County Republican Central Cmte",
-		"total":"5000"
-	},
-	{
-		"group":"Hanover Elects Responsible Officials",
-		"total":"12000"
-	},
-	{
-		"group":"Henry County Republican Central Committee",
-		"total":"12000"
-	},
-	{
-		"group":"Illinois American Water Co PAC (IL-Am PAC)",
-		"total":"1000"
-	},
-	{
-		"group":"Illinois Republican Party",
-		"total":"5796000"
-	},
-	{
-		"group":"Kane County Republican Advisory Council",
-		"total":"1000"
-	},
-	{
-		"group":"Kane County Republican Central Cmte",
-		"total":"7000"
-	},
-	{
-		"group":"Kankakee County Republican Central Committee",
-		"total":"2000"
-	},
-	{
-		"group":"Kankakee County Republican Women",
-		"total":"500"
-	},
-	{
-		"group":"Kendall County Republican Central Comm",
-		"total":"11250"
-	},
-	{
-		"group":"La Salle County Republican Central Cmte",
-		"total":"4000"
-	},
-	{
-		"group":"Lake County Republican Central Comm",
-		"total":"16000"
-	},
-	{
-		"group":"Lake County Republican Federation",
-		"total":"4000"
-	},
-	{
-		"group":"Lake County Young Republicans",
-		"total":"500"
-	},
-	{
-		"group":"Lee County Republican Central Committee",
-		"total":"500"
-	},
-	{
-		"group":"Liz for the 17th",
-		"total":"5300"
-	},
-	{
-		"group":"Logan County Republican Central Committee",
-		"total":"1500"
-	},
-	{
-		"group":"Macon County Republican Central Cmte",
-		"total":"1000"
-	},
-	{
-		"group":"Madison County Republican Central Comm",
-		"total":"6600"
-	},
-	{
-		"group":"Mason County Republican Central Comm",
-		"total":"1000"
-	},
-	{
-		"group":"McDonough County Republican Central Comm",
-		"total":"600"
-	},
-	{
-		"group":"McLean County Republican Central Comm",
-		"total":"1500"
+		"total":"200",
+		"log3":"4.822736302"
 	},
 	{
 		"group":"McLean County Republican Women",
-		"total":"300"
-	},
-	{
-		"group":"Monroe County Republican Central Cmte",
-		"total":"600"
-	},
-	{
-		"group":"Naperville Area Republican Women's Organization",
-		"total":"1000"
-	},
-	{
-		"group":"Neerhof for Illinois",
-		"total":"10600"
-	},
-	{
-		"group":"New Trier Republican Organization",
-		"total":"6500"
-	},
-	{
-		"group":"Northfield Twp Regular Republican Org",
-		"total":"5000"
-	},
-	{
-		"group":"Northwest Suburban Republican Family Picnic",
-		"total":"10000"
-	},
-	{
-		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
-		"total":"17000"
-	},
-	{
-		"group":"Nunda Township Republican Central Committee",
-		"total":"500"
-	},
-	{
-		"group":"Palatine Township Republican Organization",
-		"total":"6000"
-	},
-	{
-		"group":"Peoria County Republican Central Committee",
-		"total":"4500"
-	},
-	{
-		"group":"Perry County Republican Central Comm",
-		"total":"1000"
-	},
-	{
-		"group":"Personal PAC Inc",
-		"total":"5000"
-	},
-	{
-		"group":"Reform PAC",
-		"total":"21000"
-	},
-	{
-		"group":"Regular Republican Organization of Orland Twp",
-		"total":"3500"
-	},
-	{
-		"group":"Republican Central Comm of McHenry County",
-		"total":"7500"
-	},
-	{
-		"group":"Republican Organization of Palos Twp",
-		"total":"6500"
-	},
-	{
-		"group":"Republican Renaissance PAC Sponsor: Jack Roeser",
-		"total":"21100"
-	},
-	{
-		"group":"Republicans of Maine Township",
-		"total":"6000"
-	},
-	{
-		"group":"Republicans of Wheeling Township",
-		"total":"5000"
-	},
-	{
-		"group":"Richland County Republican Central Comm",
-		"total":"2000"
-	},
-	{
-		"group":"Rock Island County Republican Central Cmte",
-		"total":"1000"
-	},
-	{
-		"group":"Sangamon County Republican Central Comm",
-		"total":"9500"
-	},
-	{
-		"group":"Sangamon County Republican Foundation",
-		"total":"5000"
-	},
-	{
-		"group":"Schaumburg Township Republican Organization (STRO)",
-		"total":"14850"
-	},
-	{
-		"group":"Stark County Republican Central Comm",
-		"total":"1000"
-	},
-	{
-		"group":"Tazewell County Republican Central Committee",
-		"total":"600"
-	},
-	{
-		"group":"The Republican Organization of Elk Grove Twp",
-		"total":"2000"
-	},
-	{
-		"group":"The Suburban Republican Foundation",
-		"total":"7500"
-	},
-	{
-		"group":"Vermilion County Republican Central Cmte",
-		"total":"500"
-	},
-	{
-		"group":"Vote for Margo McDermed for Illinois House",
-		"total":"10600"
-	},
-	{
-		"group":"Warren Township Republican Organization",
-		"total":"2000"
-	},
-	{
-		"group":"Wheatland Twp Republican Org",
-		"total":"700"
-	},
-	{
-		"group":"Whiteside County Republican Central Committee",
-		"total":"500"
-	},
-	{
-		"group":"Will County Republican Central Comm",
-		"total":"600"
-	},
-	{
-		"group":"Williamson County Republican Central Comm",
-		"total":"1000"
-	},
-	{
-		"group":"Winger for Rep",
-		"total":"10600"
-	},
-	{
-		"group":"Winnebago County Republican Central Cmte",
-		"total":"4250"
-	},
-	{
-		"group":"Woodford County Republican Central Cmte",
-		"total":"500"
-	},
-	{
-		"group":"Worth Twp Regular Republican Org",
-		"total":"2500"
-	},
-	{
-		"group":"Wozniak for Illinois",
-		"total":"10600"
+		"total":"300",
+		"log3":"5.191806549"
 	},
 	{
 		"group":"York Township Republican Committeemen's Organization",
-		"total":"300"
+		"total":"300",
+		"log3":"5.191806549"
+	},
+	{
+		"group":"Aurora Township Republican Central Cmte",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Citizens for Dan Cronin",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Citizens for Mike Nerheim",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"DuPage Young Republicans",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Federation of Illinois Young Republicans",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Friends of Keith Brin",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Fulton County Republican Central Comm",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Kankakee County Republican Women",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Lake County Young Republicans",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Lee County Republican Central Committee",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Nunda Township Republican Central Committee",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Vermilion County Republican Central Cmte",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Whiteside County Republican Central Committee",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Woodford County Republican Central Cmte",
+		"total":"500",
+		"log3":"5.656780069"
+	},
+	{
+		"group":"Edgar County Republican Central Committee",
+		"total":"600",
+		"log3":"5.822736302"
+	},
+	{
+		"group":"McDonough County Republican Central Comm",
+		"total":"600",
+		"log3":"5.822736302"
+	},
+	{
+		"group":"Monroe County Republican Central Cmte",
+		"total":"600",
+		"log3":"5.822736302"
+	},
+	{
+		"group":"Tazewell County Republican Central Committee",
+		"total":"600",
+		"log3":"5.822736302"
+	},
+	{
+		"group":"Will County Republican Central Comm",
+		"total":"600",
+		"log3":"5.822736302"
+	},
+	{
+		"group":"Wheatland Twp Republican Org",
+		"total":"700",
+		"log3":"5.963050298"
+	},
+	{
+		"group":"Bloomingdale Township Republican Central Cmte",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Bremen Township Republican Organization",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Carroll County Republican Central Committee",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Christian County Republican Central Cmte",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Citizens for Fatimah Macklin",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Cuba Township Republicans",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Dundee Township Republican Organization",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Evanston Regular Republican Org",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Ford County Republican Central Cmte",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Illinois American Water Co PAC (IL-Am PAC)",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Kane County Republican Advisory Council",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Macon County Republican Central Cmte",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Mason County Republican Central Comm",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Naperville Area Republican Women's Organization",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Perry County Republican Central Comm",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Rock Island County Republican Central Cmte",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Stark County Republican Central Comm",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"Williamson County Republican Central Comm",
+		"total":"1000",
+		"log3":"6.287709823"
+	},
+	{
+		"group":"DeKalb County Republican Central Cmte",
+		"total":"1300",
+		"log3":"6.526524068"
+	},
+	{
+		"group":"Logan County Republican Central Committee",
+		"total":"1500",
+		"log3":"6.656780069"
+	},
+	{
+		"group":"McLean County Republican Central Comm",
+		"total":"1500",
+		"log3":"6.656780069"
+	},
+	{
+		"group":"Kankakee County Republican Central Committee",
+		"total":"2000",
+		"log3":"6.918639576"
+	},
+	{
+		"group":"Richland County Republican Central Comm",
+		"total":"2000",
+		"log3":"6.918639576"
+	},
+	{
+		"group":"The Republican Organization of Elk Grove Twp",
+		"total":"2000",
+		"log3":"6.918639576"
+	},
+	{
+		"group":"Warren Township Republican Organization",
+		"total":"2000",
+		"log3":"6.918639576"
+	},
+	{
+		"group":"8th Congressional District Republican Central Committee",
+		"total":"2500",
+		"log3":"7.12175359"
+	},
+	{
+		"group":"Citizens for Aaron Del Mar",
+		"total":"2500",
+		"log3":"7.12175359"
+	},
+	{
+		"group":"Friends of Gordy Hulten",
+		"total":"2500",
+		"log3":"7.12175359"
+	},
+	{
+		"group":"Worth Twp Regular Republican Org",
+		"total":"2500",
+		"log3":"7.12175359"
+	},
+	{
+		"group":"Citizens for Ramiro Juarez",
+		"total":"3500",
+		"log3":"7.428023818"
+	},
+	{
+		"group":"Effingham County Republican Central Comm",
+		"total":"3500",
+		"log3":"7.428023818"
+	},
+	{
+		"group":"Regular Republican Organization of Orland Twp",
+		"total":"3500",
+		"log3":"7.428023818"
+	},
+	{
+		"group":"La Salle County Republican Central Cmte",
+		"total":"4000",
+		"log3":"7.54956933"
+	},
+	{
+		"group":"Lake County Republican Federation",
+		"total":"4000",
+		"log3":"7.54956933"
+	},
+	{
+		"group":"Winnebago County Republican Central Cmte",
+		"total":"4250",
+		"log3":"7.604752239"
+	},
+	{
+		"group":"Fayette County Republican Central Comm",
+		"total":"4500",
+		"log3":"7.656780069"
+	},
+	{
+		"group":"Peoria County Republican Central Committee",
+		"total":"4500",
+		"log3":"7.656780069"
+	},
+	{
+		"group":"Addison Twp Republican Central Cmte",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Champaign County Republican Central Cmte",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Cook County Republican Party",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Grundy County Republican Central Cmte",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Northfield Twp Regular Republican Org",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Personal PAC Inc",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Republicans of Wheeling Township",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Sangamon County Republican Foundation",
+		"total":"5000",
+		"log3":"7.752683344"
+	},
+	{
+		"group":"Anderson for Illinois",
+		"total":"5300",
+		"log3":"7.805721989"
+	},
+	{
+		"group":"Citizens for Dale A Righter Illinois State Senate",
+		"total":"5300",
+		"log3":"7.805721989"
+	},
+	{
+		"group":"Citizens for Jim Moynihan",
+		"total":"5300",
+		"log3":"7.805721989"
+	},
+	{
+		"group":"Citizens for Joe Sosnowski",
+		"total":"5300",
+		"log3":"7.805721989"
+	},
+	{
+		"group":"Liz for the 17th",
+		"total":"5300",
+		"log3":"7.805721989"
+	},
+	{
+		"group":"Palatine Township Republican Organization",
+		"total":"6000",
+		"log3":"7.918639576"
+	},
+	{
+		"group":"Republicans of Maine Township",
+		"total":"6000",
+		"log3":"7.918639576"
+	},
+	{
+		"group":"New Trier Republican Organization",
+		"total":"6500",
+		"log3":"7.991497589"
+	},
+	{
+		"group":"Republican Organization of Palos Twp",
+		"total":"6500",
+		"log3":"7.991497589"
+	},
+	{
+		"group":"Madison County Republican Central Comm",
+		"total":"6600",
+		"log3":"8.005394641"
+	},
+	{
+		"group":"Kane County Republican Central Cmte",
+		"total":"7000",
+		"log3":"8.058953572"
+	},
+	{
+		"group":"Republican Central Comm of McHenry County",
+		"total":"7500",
+		"log3":"8.12175359"
+	},
+	{
+		"group":"The Suburban Republican Foundation",
+		"total":"7500",
+		"log3":"8.12175359"
+	},
+	{
+		"group":"Adams County Republican Central Committee",
+		"total":"8000",
+		"log3":"8.180499084"
+	},
+	{
+		"group":"Sangamon County Republican Central Comm",
+		"total":"9500",
+		"log3":"8.336923929"
+	},
+	{
+		"group":"Downstate GOP",
+		"total":"10000",
+		"log3":"8.383613097"
+	},
+	{
+		"group":"Northwest Suburban Republican Family Picnic",
+		"total":"10000",
+		"log3":"8.383613097"
+	},
+	{
+		"group":"Chicago Young Republicans",
+		"total":"10500",
+		"log3":"8.428023818"
+	},
+	{
+		"group":"Citizens for Chris Nybo",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Christine Radogno",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Darin LaHood",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Durkin",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Heidi Holan",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Kay",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Luechtefeld",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Reggie Phillips",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens for Seth Lewis",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Citizens to Elect Ron Sandack",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Committee to Elect Sheri Jesiel",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Cross for Treasurer",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"David McSweeney for State Representative",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Friends for Rod Drobinski",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Friends of Kristin Williamson",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Friends of Tom Bennett",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Neerhof for Illinois",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Vote for Margo McDermed for Illinois House",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Winger for Rep",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Wozniak for Illinois",
+		"total":"10600",
+		"log3":"8.436651743"
+	},
+	{
+		"group":"Kendall County Republican Central Comm",
+		"total":"11250",
+		"log3":"8.490823836"
+	},
+	{
+		"group":"Friends of Shaun Murphy",
+		"total":"11350",
+		"log3":"8.498879103"
+	},
+	{
+		"group":"Hanover Elects Responsible Officials",
+		"total":"12000",
+		"log3":"8.54956933"
+	},
+	{
+		"group":"Henry County Republican Central Committee",
+		"total":"12000",
+		"log3":"8.54956933"
+	},
+	{
+		"group":"Schaumburg Township Republican Organization (STRO)",
+		"total":"14850",
+		"log3":"8.743535134"
+	},
+	{
+		"group":"Downers Grove Township Republican Organization",
+		"total":"15500",
+		"log3":"8.782529927"
+	},
+	{
+		"group":"Lake County Republican Central Comm",
+		"total":"16000",
+		"log3":"8.811428837"
+	},
+	{
+		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
+		"total":"17000",
+		"log3":"8.866611746"
+	},
+	{
+		"group":"Reform PAC",
+		"total":"21000",
+		"log3":"9.058953572"
+	},
+	{
+		"group":"Republican Renaissance PAC Sponsor: Jack Roeser",
+		"total":"21100",
+		"log3":"9.063277757"
+	},
+	{
+		"group":"Citizens for Glenn Nixon",
+		"total":"21200",
+		"log3":"9.067581497"
+	},
+	{
+		"group":"Citizens for Leslie Munger",
+		"total":"21200",
+		"log3":"9.067581497"
+	},
+	{
+		"group":"Committee to Elect Keith Wheeler",
+		"total":"21200",
+		"log3":"9.067581497"
+	},
+	{
+		"group":"Committee to Elect Mel Thillens",
+		"total":"21200",
+		"log3":"9.067581497"
+	},
+	{
+		"group":"Friends of John D Anthony",
+		"total":"21200",
+		"log3":"9.067581497"
+	},
+	{
+		"group":"DuPage County Republican Central Committee",
+		"total":"25000",
+		"log3":"9.217656864"
+	},
+	{
+		"group":"Friends of Mark Batinick",
+		"total":"46200",
+		"log3":"9.77663839"
+	},
+	{
+		"group":"Committee for Legislative Reform and Term Limits",
+		"total":"600000",
+		"log3":"12.11044613"
+	},
+	{
+		"group":"Illinois Republican Party",
+		"total":"5796000",
+		"log3":"14.17486291"
+	},
+	{
+		"group":"Citizens for Rauner, Inc",
+		"total":"23109184",
+		"log3":"15.43378028"
 	}
-]
+  ]
 }

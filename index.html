@@ -139,18 +139,14 @@
     function getColor(feature) {
 
         // lookup name and return value to assign to color
-        var blah = returnName(feature);
-        console.log(blah);
+        var dammount = returnAmmount(feature);
 
-
-        return blah > 1000 ? '#8c2d04' :
-               blah > 500  ? '#cc4c02' :
-               blah > 200  ? '#ec7014' :
-               blah > 100  ? '#fe9929' :
-               blah > 50   ? '#fec44f' :
-               blah > 20   ? '#fee391' :
-               blah > 10   ? '#fff7bc' :
-                          '#ffffe5' ;
+        return dammount > 10  ? '#FF0000' :
+               dammount > 9   ? '#FF8000' :
+               dammount > 8.3 ? '#FFFF00' :
+               dammount > 7.7 ? '#80FF00' :
+               dammount > 6   ? '#00FFA2' :
+                                '#FFFFFF' ;
     }
 
     function onEachFeature(feature, layer) {
@@ -161,8 +157,7 @@
         });
     }
 
-    function returnName(e){
-        // console.log(e);
+    function returnAmmount(e){
 
         var recordname = e.properties.NAME;
         var recordbigname = e.properties.NAMELSAD;
@@ -172,7 +167,7 @@
 
                 for (var ii = 0, rr; rr = raunercontributions.records[ii]; ii++) {
                     if (rr.group == record.group) {
-                        return rr.total;
+                        return rr.log3;
                     }
                 }
             }
