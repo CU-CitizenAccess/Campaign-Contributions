@@ -68,16 +68,16 @@
             <p>This map shows where contributions from each candidate are made.</p>
             <h5>Choose a candidate:</h5>
             <div class="btn-group">
-                <button type="button" class="btn btn-default candidate-button" candidate="rauner">Bruce Rauner</button>
-                <button type="button" class="btn btn-default candidate-button" candidate="quinn">Pat Quinn</button>
+                <button type="button" onclick="switchCandidate('rauner')" class="btn btn-default candidate-button" candidate="rauner">Bruce Rauner</button>
+                <button type="button" onclick="switchCandidate('quinn')" class="btn btn-default candidate-button" candidate="quinn">Pat Quinn</button>
             </div>
             <div id="step2" style="display: none;">
                 <h5>Choose a map:</h5>
                 <div class="zones" style="width: 300px;">
-                    <button type="button" onclick="loadmap('il_house', house)" class="btn btn-default map-button">House Districts</button>
-                    <button type="button" onclick="loadmap('il_senate', senate)" class="btn btn-default map-button">Senate Districts</button>
-                    <button type="button" onclick="loadmap('county', counties)" class="btn btn-default map-button">County Lines</button>
-                    <button type="button" onclick="loadmap('place', places)" class="btn btn-default map-button">Towns and Cities</button>
+                    <button type="button" onclick="loadMap('il_house', house)" class="btn btn-default map-button">House Districts</button>
+                    <button type="button" onclick="loadMap('il_senate', senate)" class="btn btn-default map-button">Senate Districts</button>
+                    <button type="button" onclick="loadMap('county', counties)" class="btn btn-default map-button">County Lines</button>
+                    <button type="button" onclick="loadMap('place', places)" class="btn btn-default map-button">Towns and Cities</button>
                 </div>
             </div>
             <div id="step3" style="display: none;">
@@ -133,13 +133,14 @@
     var contributions;
     var candidate;
     var map_place;
+    var map_l;
 
     // change buttons when clicked
     $('button').click(function(){
         if ($(this).hasClass('candidate-button')){
             $('.candidate-button').removeClass('btn-success').addClass('btn-default');
             $(this).removeClass('btn-default').addClass('btn-success');
-            candidate = $(this).attr('candidate')
+            candidate = $(this).attr('candidate');
             $('#step2').fadeIn();
         }
         else if ($(this).hasClass('map-button')){
@@ -155,10 +156,13 @@
         maxZoom: 18
     }).addTo(map);
 
-    function loadmap(map_name, map_layer, candidate) {
+    function loadMap(map_name, map_layer, c) {
 
+        console.log(c);
         console.log(map_name);
-        map_place = map_name
+        map_place = map_name;
+
+        map_l = map_layer;
 
         if (map_zone){
             map.removeLayer(map_zone)
@@ -281,6 +285,16 @@
 
     function clickEvent(e) {
         // map.fitBounds(e.target.getBounds());
+    }
+
+    // refresh map if already loaded and a new candidate is chosen
+    function switchCandidate(c){
+
+            candidate = c;
+            mn = map_place;
+            ml = map_l;
+
+            loadMap(mn, ml, candidate)
     }
 
     $('#legend').css('display', 'block');
