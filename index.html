@@ -5,7 +5,7 @@
     <title>Campaign Contributions</title>
     <!-- Leaflet JS -->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="js/leaflet.ajax.min.js"></script>
 
     <!-- Jquery -->
@@ -13,7 +13,12 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Accounting -->
+    <script src="js/accounting.min.js"></script>
+
+    <!-- Styles -->
     <style>
         body { margin:0; padding:0; }
         #map { display: inline-block; width:700px; height: 700px; float: left; }
@@ -32,7 +37,8 @@
             margin-bottom: 5px;
             display: inline-block;
         }
-        .record { border: 1px solid #19A347; padding: 0 5px; margin-bottom: 10px; }
+        .record { padding: 0 5px; margin: 10px 0; border-top: 1px solid green; }
+        .record h5 { line-height: 1.5em; padding-bottom: 4px; margin-bottom: 0; }
     </style>
 </head>
 <body>
@@ -48,7 +54,7 @@
         </div>
         <h5>Choose a map:</h5>
         <div class="zones" style="width: 300px;">
-            <button type="button" onclick="loadmap('house', house)" class="btn btn-success map-button">House Districts</button>
+            <button type="button" onclick="loadmap('house', house)" class="btn btn-default map-button">House Districts</button>
             <button type="button" onclick="loadmap('senate', senate)" class="btn btn-default map-button">Senate Districts</button>
             <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
             <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
@@ -63,12 +69,14 @@
 <script src="geojson/counties.geojson"></script>
 <script src="geojson/places.geojson"></script>
 <script src="json/groupnames.json"></script>
-<!-- variables declared in above json files:
+<script src="json/raunercontributions.json"></script>
+<!-- variables declared in above json files^
 - house (state house districts)
 - senate (state senate districts)
 - counties (state county lines)
 - places (cities, towns, etc)
 - groupnames (match donation recipients to a location)
+- raunercontributions (lists groups and totals from rauner)
 -->
 
 <script>
@@ -162,6 +170,28 @@
         if (!L.Browser.ie && !L.Browser.opera) {
             layer.bringToFront();
         }
+
+        // clear out information box
+        $('#information').html('');
+
+        // populate information box with records
+        var recordname = e.target.feature.properties.NAME;
+        var recordbigname = e.target.feature.properties.NAMELSAD
+
+        for (var i = 0, record; record = groupnames.records[i]; i++){
+            if (recordname == record.place){
+
+                for (var ii = 0, rr; rr = raunercontributions.records[ii]; ii++) {
+                    if (rr.group == record.group){
+                        $('#information').append('' +
+                                '<div class="record">' +
+                                '<h5>' + record.group + '</h5>' +
+                                '<p>' + accounting.formatMoney(rr.total) + '</p>' +
+                                '</div>')
+                    }
+                }
+            }
+        }
     }
 
     function mouseout(e) {
@@ -173,20 +203,6 @@
 
     function clickEvent(e) {
         // map.fitBounds(e.target.getBounds());
-
-        // clear out information box
-        $('#information').html('');
-
-        // populate information box with records
-        var recordname = e.target.feature.properties.NAME;
-        console.log(e.target.feature.properties.NAMELSAD)
-
-        for (var i = 0, record; record = groupnames.records[i]; i++){
-            if (recordname == record.place){
-                console.log('... you picked ' + recordname);
-                $('#information').append('<div class="record"><h5>' + record.group + '</h5></div>')
-            }
-        }
     }
 </script>
 </body>
