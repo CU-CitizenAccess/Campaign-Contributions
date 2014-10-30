@@ -76,12 +76,18 @@
             <button type="button" class="btn btn-default candidate-button" candidate="rauner">Bruce Rauner</button>
             <button type="button" class="btn btn-default candidate-button" candidate="quinn">Pat Quinn</button>
         </div>
-        <h5>Choose a map:</h5>
-        <div class="zones" style="width: 300px;">
-            <button type="button" onclick="loadmap('house', house)" class="btn btn-default map-button">House Districts</button>
-            <button type="button" onclick="loadmap('senate', senate)" class="btn btn-default map-button">Senate Districts</button>
-            <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
-            <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
+        <div id="step2" style="display: none;">
+            <h5>Choose a map:</h5>
+            <div class="zones" style="width: 300px;">
+                <button type="button" onclick="loadmap('house', house)" class="btn btn-default map-button">House Districts</button>
+                <button type="button" onclick="loadmap('senate', senate)" class="btn btn-default map-button">Senate Districts</button>
+                <button type="button" onclick="loadmap('counties', counties)" class="btn btn-default map-button">County Lines</button>
+                <button type="button" onclick="loadmap('places', places)" class="btn btn-default map-button">Towns and Cities</button>
+            </div>
+        </div>
+        <div id="step3" style="display: none;">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+            <b>Mouse over the map to see more.</b>
         </div>
         <div><h4 class="marker-title"></h4></div>
         <div id="information"></div>
@@ -127,11 +133,12 @@
             $('.candidate-button').removeClass('btn-success').addClass('btn-default');
             $(this).removeClass('btn-default').addClass('btn-success');
             candidate = $(this).attr('candidate')
-            console.log(candidate)
+            $('#step2').fadeIn();
         }
         else if ($(this).hasClass('map-button')){
             $('.map-button').removeClass('btn-success').addClass('btn-default');
             $(this).removeClass('btn-default').addClass('btn-success');
+            $('#step3').fadeIn();
         }
     });
 
