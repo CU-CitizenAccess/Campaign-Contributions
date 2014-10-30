@@ -1,0 +1,75 @@
+var quinncontributions = {"records":[
+	{
+		"group":"17th Dist State Cent Comm Don Johnston Campaign",
+		"total":"600"
+	},
+	{
+		"group":"Carol Ammons for State Representative",
+		"total":"250"
+	},
+	{
+		"group":"Chicago & Northeast Illinois District Council",
+		"total":"22400"
+	},
+	{
+		"group":"Citizens for Pat Dowell",
+		"total":"250"
+	},
+	{
+		"group":"Cook County Democratic Party",
+		"total":"30000"
+	},
+	{
+		"group":"DuPage County Democratic Central Committee",
+		"total":"250"
+	},
+	{
+		"group":"Friends of Frank Zuccarelli",
+		"total":"200"
+	},
+	{
+		"group":"Greater Palatine Area Democrats",
+		"total":"2250"
+	},
+	{
+		"group":"IL Machinist Non-partisan Political League",
+		"total":"25000"
+	},
+	{
+		"group":"Illinois Democratic Women",
+		"total":"250"
+	},
+	{
+		"group":"Illinois Funeral Directors Assn PAC  (IFDA-PAC)",
+		"total":"10000"
+	},
+	{
+		"group":"Illinois Laborers' Legislative Committee",
+		"total":"50100"
+	},
+	{
+		"group":"Indo-American Democratic Org",
+		"total":"500"
+	},
+	{
+		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
+		"total":"60500"
+	},
+	{
+		"group":"IUOE Local 399 Political Education Fund",
+		"total":"399"
+	},
+	{
+		"group":"Local 3 Political Action Committee",
+		"total":"3600"
+	},
+	{
+		"group":"Thornton Twp Regular Democratic Org",
+		"total":"1000"
+	},
+	{
+		"group":"Tony Mayville Campaign Fund",
+		"total":"500"
+	}
+]
+}
