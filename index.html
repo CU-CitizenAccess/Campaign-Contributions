@@ -65,7 +65,7 @@
     <div id='map'>
         <div id='sidebar'>
             <h4>Campaign Contributions</h4>
-            <p>This map shows where contributions from each candidate are made.</p>
+            <p>This map shows where contributions from each candidate are made as of Oct. 31, 2014</p>
             <h5>Choose a candidate:</h5>
             <div class="btn-group">
                 <button type="button" onclick="switchCandidate('rauner')" class="btn btn-default candidate-button" candidate="rauner">Bruce Rauner</button>
@@ -96,8 +96,8 @@
             <div id="legend">
                 <h4>Legend</h4>
                 <table class="legendtable">
-                    <tr><td class="legendcolor" style="background-color:#a50f15;"></td><td style="padding-left: 10px;">$100,000 +</td></tr>
-                    <tr><td class="legendcolor" style="background-color:#de2d26;"></td><td style="padding-left: 10px;">$20,000 - $99,999</td></tr>
+                    <tr><td class="legendcolor" style="background-color:#a50f15;"></td><td style="padding-left: 10px;">$50,000 +</td></tr>
+                    <tr><td class="legendcolor" style="background-color:#de2d26;"></td><td style="padding-left: 10px;">$20,000 - $49,999</td></tr>
                     <tr><td class="legendcolor" style="background-color:#fb6a4a;"></td><td style="padding-left: 10px;">$10,000 - $19,999</td></tr>
                     <tr><td class="legendcolor" style="background-color:#fcae91;"></td><td style="padding-left: 10px;">$5,000 - $9,999</td></tr>
                     <tr><td class="legendcolor" style="background-color:#fee5d9;"></td><td style="padding-left: 10px;">$1 - $4,999</td></tr>
@@ -192,7 +192,7 @@
         // lookup name and return value to assign to color
         var dammount = returnAmmount(feature);
 
-        return dammount > 100000  ? '#a50f15' :
+        return dammount > 50000   ? '#a50f15' :
                dammount > 20000   ? '#de2d26' :
                dammount > 10000   ? '#fb6a4a' :
                dammount > 5000    ? '#fcae91' :
