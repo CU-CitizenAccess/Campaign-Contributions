@@ -56,7 +56,7 @@
         .legendtable {border: none;}
         .legendcolor {width: 15px; height: 15px; padding: 0 15px 0 0; }
         .record { padding: 0 5px; margin: 10px 0; border-top: 1px solid green; }
-        .record h5 { line-height: 1.5em; padding-bottom: 4px; margin-bottom: 0; }
+        .record h5 { line-height: 1.1em; padding-bottom: 4px; margin-bottom: 0; }
         #logo { position: absolute; bottom: 0; width: 200px; margin: 0 auto 10px auto; }
     </style>
 </head>
@@ -264,7 +264,15 @@
             if (record.place == recordname){
 
                 for (var ii = 0, rr; rr = contributions.records[ii]; ii++) {
-                    if (rr.group == record.group && map_place == record.type) {
+                    if (rr.group == record.group && record.note && map_place == record.type) {
+                        $('#information').append('' +
+                                '<div class="record">' +
+                                '<h5>' + record.group + '</h5>' +
+                                '<p style="font-size: 8px;">' + record.note + '</p>' +
+                                '<p>' + accounting.formatMoney(rr.total) + '</p>' +
+                                '</div>')
+                    }
+                    else if (rr.group == record.group && map_place == record.type) {
                         $('#information').append('' +
                                 '<div class="record">' +
                                 '<h5>' + record.group + '</h5>' +

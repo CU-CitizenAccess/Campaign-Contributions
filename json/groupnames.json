@@ -2,907 +2,1087 @@ var groupnames = {"records":[
 	{
 		"group":"Adams County Republican Central Committee",
 		"place":"Adams",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Carroll County Republican Central Committee",
 		"place":"Carroll",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Champaign County Republican Central Cmte",
 		"place":"Champaign",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Christian County Republican Central Cmte",
 		"place":"Christian",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Cook County Republican Party",
 		"place":"Cook",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Cook County Democratic Party",
 		"place":"Cook",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"DeKalb County Republican Central Cmte",
 		"place":"DeKalb",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"DuPage County Republican Central Committee",
 		"place":"DuPage",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"DuPage Young Republicans",
 		"place":"DuPage",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"DuPage County Democratic Central Committee",
 		"place":"DuPage",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Edgar County Republican Central Committee",
 		"place":"Edgar",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Effingham County Republican Central Comm",
 		"place":"Effingham",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Fayette County Republican Central Comm",
 		"place":"Fayette",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Ford County Republican Central Cmte",
 		"place":"Ford",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Fulton County Republican Central Comm",
 		"place":"Fulton",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Grundy County Republican Central Cmte",
 		"place":"Grundy",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Henry County Republican Central Committee",
 		"place":"Henry",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Kane County Republican Advisory Council",
 		"place":"Kane",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Kane County Republican Central Cmte",
 		"place":"Kane",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Kankakee County Republican Central Committee",
 		"place":"Kankakee",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Kankakee County Republican Women",
 		"place":"Kankakee",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Kendall County Republican Central Comm",
 		"place":"Kendall",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"La Salle County Republican Central Cmte",
 		"place":"La Salle",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Lake County Republican Central Comm",
 		"place":"Lake",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Lake County Republican Federation",
 		"place":"Lake",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Lake County Young Republicans",
 		"place":"Lake",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Lee County Republican Central Committee",
 		"place":"Lee",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Logan County Republican Central Committee",
 		"place":"Logan",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Macon County Republican Central Cmte",
 		"place":"Macon",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Madison County Republican Central Comm",
 		"place":"Madison",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Mason County Republican Central Comm",
 		"place":"Mason",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"McDonough County Republican Central Comm",
 		"place":"McDonough",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Republican Central Comm of McHenry County",
 		"place":"McHenry",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"McLean County Republican Central Comm",
 		"place":"McLean",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"McLean County Republican Women",
 		"place":"McLean",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Monroe County Republican Central Cmte",
 		"place":"Monroe",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Peoria County Republican Central Committee",
 		"place":"Peoria",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Perry County Republican Central Comm",
 		"place":"Perry",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Richland County Republican Central Comm",
 		"place":"Richland",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Rock Island County Republican Central Cmte",
 		"place":"Rock Island",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Sangamon County Republican Central Comm",
 		"place":"Sangamon",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Sangamon County Republican Foundation",
 		"place":"Sangamon",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Stark County Republican Central Comm",
 		"place":"Stark",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Tazewell County Republican Central Committee",
 		"place":"Tazewell",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Vermilion County Republican Central Cmte",
 		"place":"Vermilion",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Whiteside County Republican Central Committee",
 		"place":"Whiteside",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Will County Republican Central Comm",
 		"place":"Will",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Williamson County Republican Central Comm",
 		"place":"Williamson",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Winnebago County Republican Central Cmte",
 		"place":"Winnebago",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Woodford County Republican Central Cmte",
 		"place":"Woodford",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Rock Island",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Henry",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Mercer",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Whiteside",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Carroll",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Jo Daviess",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Stephenson",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Ogle",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Winnebago",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Lee",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Boone",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Rock Island",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Henry",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Mercer",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Whiteside",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Carroll",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Jo Daviess",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Stephenson",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Ogle",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Winnebago",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Lee",
-		"type":"county"
-	},
-	{
-		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
-		"place":"Boone",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"DeKalb",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Bureau",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"La Salle",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Putnam",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Livingston",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"McHenry",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Lake",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Kane",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Cook",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"DuPage",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Kendall",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Will",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Grundy",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Intl Union of Operating Eng Local 150 State County & Local Area PAC",
 		"place":"Kankakee",
-		"type":"county"
+		"type":"county",
+		"note":"Distributed between Rock Island, Henry, Mercer, Whiteside, Carroll, Jo Daviess, Stephenson, Ogle, Winnebago, Lee, Boone, DeKalb, Bureau, La Salle, Putnam, Livingston, McHenry, Lake, Kane, Cook, DuPage, Kendall, Will, Grundy, and Kankakee"
 	},
 	{
 		"group":"Citizens for Dan Cronin",
 		"place":"DuPage",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Friends of Keith Brin",
 		"place":"Lake",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Mercer County Republican Central Committee",
 		"place":"Mercer",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Piatt County Republican Central Cmte",
 		"place":"Piatt",
-		"type":"county"
+		"type":"county",
+		"note":""
 	},
 	{
 		"group":"Citizens for Reggie Phillips",
 		"place":"110",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends for Mike Bell",
 		"place":"96",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends for Rod Drobinski",
 		"place":"62",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends of Kristin Williamson",
 		"place":"103",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Carol Ammons for State Representative",
 		"place":"103",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends of Tom Bennett",
 		"place":"106",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Kay",
 		"place":"112",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Tony Mayville Campaign Fund",
 		"place":"115",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Fatimah Macklin",
 		"place":"34",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Vote for Margo McDermed for Illinois House",
 		"place":"37",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Ramiro Juarez",
 		"place":"44",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Seth Lewis",
 		"place":"45",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Winger for Rep",
 		"place":"45",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Heidi Holan",
 		"place":"46",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Committee to Elect Keith Wheeler",
 		"place":"50",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"David McSweeney for State Representative",
 		"place":"52",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Committee to Elect Mel Thillens",
 		"place":"55",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Jim Moynihan",
 		"place":"56",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Neerhof for Illinois",
 		"place":"58",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Leslie Munger",
 		"place":"59",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Committee to Elect Sheri Jesiel",
 		"place":"61",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Joe Sosnowski",
 		"place":"69",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Wozniak for Illinois",
 		"place":"71",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends of John D Anthony",
 		"place":"75",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Glenn Nixon",
 		"place":"79",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens to Elect Ron Sandack",
 		"place":"81",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Citizens for Durkin",
 		"place":"82",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends of Mark Batinick",
 		"place":"97",
-		"type":"il_house"
+		"type":"il_house",
+		"note":""
 	},
 	{
 		"group":"Friends of Shaun Murphy",
 		"place":"18",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Citizens for Chris Nybo",
 		"place":"24",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Anderson for Illinois",
 		"place":"36",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Citizens for Darin LaHood",
 		"place":"37",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Citizens for Christine Radogno",
 		"place":"41",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Citizens for Dale A Righter Illinois State Senate",
 		"place":"55",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Citizens for Luechtefeld",
 		"place":"58",
-		"type":"il_senate"
+		"type":"il_senate",
+		"note":""
 	},
 	{
 		"group":"Chicago Young Republicans",
 		"place":"Chicago",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Evanston Regular Republican Org",
 		"place":"Evanston",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Naperville Area Republican Women's Organization",
 		"place":"Naperville",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Addison Twp Republican Central Cmte",
 		"place":"Addison",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Aurora Township Republican Central Cmte",
 		"place":"Aurora",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Bloomingdale Township Republican Central Cmte",
 		"place":"Bloomingdale",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Bremen Township Republican Organization",
 		"place":"Bremen",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Cuba Township Republicans",
 		"place":"Cuba",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Downers Grove Township Republican Organization",
 		"place":"Downers Grove",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Dundee Township Republican Organization",
 		"place":"Dundee",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"The Republican Organization of Elk Grove Twp",
 		"place":"Elk Grove",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Hanover Elects Responsible Officials",
 		"place":"Hanover",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Republicans of Maine Township",
 		"place":"Maine",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"New Trier Republican Organization",
 		"place":"New Trier",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Northfield Twp Regular Republican Org",
 		"place":"Northfield",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Nunda Township Republican Central Committee",
 		"place":"Nunda",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Regular Republican Organization of Orland Twp",
 		"place":"Orland",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Palatine Township Republican Organization",
 		"place":"Palatine",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Republican Organization of Palos Twp",
 		"place":"Palos",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Schaumburg Township Republican Organization (STRO)",
 		"place":"Schaumburg",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Warren Township Republican Organization",
 		"place":"Warren",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Wheatland Twp Republican Org",
 		"place":"Wheatland",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Republicans of Wheeling Township",
 		"place":"Wheeling",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Worth Twp Regular Republican Org",
 		"place":"Worth",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"York Township Republican Committeemen's Organization",
 		"place":"York",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Greater Palatine Area Democrats",
 		"place":"Palatine",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Friends of Frank Zuccarelli",
 		"place":"Thornton",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Thornton Twp Regular Democratic Org",
 		"place":"Thornton",
-		"type":"place"
+		"type":"place",
+		"note":""
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Barrington",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Elk Grove",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Hanover",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Maine",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Palatine",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Schaumburg",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Family Picnic",
 		"place":"Wheeling",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, and Wheeling"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Barrington",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Elk Grove",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Hanover",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Maine",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Palatine",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Schaumburg",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Wheeling",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Northwest Suburban Republican Lincoln Day Dinner Comm",
 		"place":"Northfield",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Barrington, Elk Grove, Hanover, Maine, Palatine, Schaumburg, Wheeling, and Northfield"
 	},
 	{
 		"group":"Godfrey District 1 Republicans",
 		"place":"Godfrey",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Alton, Foster and Godfrey"
 	},
 	{
 		"group":"Godfrey District 1 Republicans",
 		"place":"Alton",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Alton, Foster and Godfrey"
 	},
 	{
 		"group":"Godfrey District 1 Republicans",
 		"place":"Foster",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Alton, Foster and Godfrey"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Hampshire",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Plato",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Virgil",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Big Rock",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Sugar Grove",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Elburn",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Kaneville",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Gilberts",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Burlington",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
 	},
 	{
 		"group":"Western Kane County Republican Org",
 		"place":"Maple Park",
-		"type":"place"
+		"type":"place",
+		"note":"Distributed between Hampshire, Plato, Virgil, Big Rock, Sugar Grove, Elburn, Kaneville, Gilberts, Burlington, and Maple Park"
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
+	},
+	{
+		"group":"",
+		"place":"",
+		"type":"",
+		"note":""
 	}
-]
-}
+	]}
